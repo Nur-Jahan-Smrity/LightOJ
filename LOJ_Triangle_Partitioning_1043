@@ -1,0 +1,53 @@
+//LOJ_Triangle_Partitioning_1043
+#include<bits/stdc++.h>
+
+  // reverse(s.begin(), s.end());
+using namespace std;
+typedef long long ll;
+//int j=0;
+ll i=1;
+void solve()
+{
+    double ab,ac,bc,ratio;
+  
+    cin>>ab>>ac>>bc>>ratio;
+    double ad=ab*(sqrt(ratio/(ratio+1)));
+    cout<<"Case "<<i<<": "<<fixed<<setprecision(10)<<ad<<endl;
+    i++;
+}
+void test()
+{
+    long long t;
+    cin>>t;
+
+    while(t--)
+    {
+        //j++;
+        solve();
+    }
+
+}
+
+int main()
+{
+
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    //int n = sizeof(arr) / sizeof(arr[0]);
+    test();
+   // solve();
+}
+/*
+4
+100 100 100 2
+10 12 14 1
+7 8 9 10
+8.134 9.098 7.123 5.10
+
+Case 1: 81.6496580
+Case 2: 7.07106781
+Case 3: 6.6742381247
+Case 4: 7.437454786
+
+
+*/
